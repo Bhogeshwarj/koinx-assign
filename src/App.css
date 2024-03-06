@@ -23,7 +23,27 @@ gap: 30px;
 background-color: rgba(0, 82, 254, 1);
 
 }
+.cardsenti1{
+  background: rgba(232, 244, 253, 1);
 
+}
+.cardsenti2{
+  background:rgba(235, 249, 244, 1)
+
+}
+.bgb{
+  background: rgba(232, 244, 253, 1);
+
+}
+.card-likeContainer{
+  width:  881px;
+height: 500px;
+padding: 24px;
+border-radius: 8px;
+gap: 24px;
+margin-bottom: 5px;
+
+}
 .card2{
   background-color: white;
   width: 426px;
@@ -36,4 +56,12 @@ background-color: rgba(0, 82, 254, 1);
   background-color: white;
   width: 250px;
   height: 48px;
+}
+.card1-aboutbitcoin{
+  background: linear-gradient(135deg, #79F1A4 0%, #0E5CAD 100%);
+
+  width: 388px;
+height: 151px;
+border-radius: 6.65px;
+
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import TradingViewWidget from './TradingViewWidget'
 import AdandTrend from './AdandTrend'
 import Infolayout from './Info'
+import Aboutcoin from './AboutCoin'
 
 
 const Currencylayout = () => {
@@ -17,6 +18,7 @@ const Currencylayout = () => {
                         <div className="info">
                                 <Infolayout />
                         </div>
+                        <Aboutcoin />
                     </div>
             </div>
             <div className="adandtrend">
@@ -24,9 +26,9 @@ const Currencylayout = () => {
             </div>
        </div>
     </div>
-    <div className="youmaylike">
+    {/* <div className="youmaylike">
             YouMayAlsoLike
-        </div>
+        </div> */}
     </>
   )
 }
