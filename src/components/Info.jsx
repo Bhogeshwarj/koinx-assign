@@ -58,11 +58,10 @@ const Infolayout = () => {
                 >
                     Tokenomics
                 </NavLink>
-
-
-            </nav>
+                </nav>
             <hr className='h-1 text-gray-400 mb-5'/>
             <Outlet />
+           
         </>
     );
 };

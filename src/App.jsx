@@ -43,10 +43,7 @@ const router = createBrowserRouter(
       <Route path="freetools" element={<FreeTools />} />
       <Route path="getstarted" element={<Getstarted />} />
       <Route path="resourcecenter" element={<Resourcecenter />} />
-
- 
-      
-    </Route>
+</Route>
   )
 )
 
@@ -55,6 +52,7 @@ function App() {
   return (
     <>
     <RouterProvider router={router} />
+
     </>
   )
 }

@@ -24,11 +24,13 @@ const Currencylayout = () => {
             <div className="adandtrend">
                 <AdandTrend/>
             </div>
+      
        </div>
     </div>
-    {/* <div className="youmaylike">
-            YouMayAlsoLike
-        </div> */}
+   
+   <div className="hello">
+    <p>hi</p>
+   </div>
     </>
   )
 }

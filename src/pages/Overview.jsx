@@ -35,6 +35,11 @@ const Overview = () => {
           </div>
           <hr />
           <div className="py-2 flex justify-between">
+            <p className="text-gray-500">Trading Volume</p>
+            <p>$23,249,202,782</p>
+          </div>
+          <hr />
+          <div className="py-2 flex justify-between">
             <p className="text-gray-500">Market Cap</p>
             <p>$323,507,290,047</p>
           </div>
@@ -50,16 +55,25 @@ const Overview = () => {
           </div>
         </div>
         <div>
-          <div className="py-2 mt-4 flex justify-between">
-            <p className="text-gray-500">Trading Volume</p>
-            <p>$23,249,202,782</p>
-          </div>
-          <hr />
-          <div className="py-2 flex justify-between">
+        
+          <div className="py-2 mt-4  flex justify-between">
             <p className="text-gray-500">All-Time High</p>
             <p>$69,044.77 (-75.6%)</p>
           </div>
           <hr />
+
+          <div className="py-2 flex justify-between">
+        <p className="text-gray-500">Volume/Market Cap</p>
+        <p>0.0718</p>
+      </div>
+      <hr />
+      <div className="py-2 flex justify-between">
+        <p className="text-gray-500">Market Cap Dominance</p>
+        <p>38.343%</p>
+      </div>
+      <hr />
+
+      <hr />
           <div className="py-2 flex justify-between">
             <p className="text-gray-500">Market Cap Rank</p>
             <p>#1</p>
