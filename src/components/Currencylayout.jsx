@@ -2,6 +2,8 @@ import React from 'react'
 
 import TradingViewWidget from './TradingViewWidget'
 import AdandTrend from './AdandTrend'
+import Infolayout from './Info'
+
 
 const Currencylayout = () => {
   return (
@@ -10,8 +12,11 @@ const Currencylayout = () => {
     <div className=" my-3"> <span className='cl'> Cryptocurrencies &gt;&gt;</span> Bitcoin</div>
        <div className="mainsection flex justify-between">
             <div className="flex flex-col chartandinfo">
-                    <div className='currencyInfo chart'>
+                    <div className='currencyInfo chart '>
                         <TradingViewWidget />
+                        <div className="info">
+                                <Infolayout />
+                        </div>
                     </div>
             </div>
             <div className="adandtrend">

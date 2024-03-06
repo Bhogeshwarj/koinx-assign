@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState } from 'react';
 import logo from '../assets/image.png'
-
+import { NavLink,Link } from 'react-router-dom';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
       <nav className="flex items-center justify-between bg-white flex-wrap p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-          <img src={logo} className=" logo mr-2" alt="Logo" />
+        <Link to="/">  <img src={logo} className=" logo mr-2" alt="Logo" /> </Link>
         </div>
         <div className="block lg:hidden">
           <button
@@ -35,15 +35,15 @@ const Header = () => {
           className={`w-full block lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
         >
           <div className="font-semibold lg:flex-grow">
-            <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-3">
+            <NavLink to="/cryptotaxes"  className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-3">
                 Crypto Taxes
-            </a>
-            <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-3">
+            </NavLink>
+            <NavLink to="/freetools" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-3">
                 Free Tools
-            </a>
-            <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200">
+            </NavLink>
+            <NavLink to="resourcecenter" className="block mt-4 lg:inline-block lg:mt-0 text-white-200">
               Resource Center
-            </a>
+            </NavLink>
           </div>
           <div>
             <button className="inline-flex mt-4 gradient  md:mt-0 ml-4 rounded-md items-center border-0 py-2 px-4 text-white">
