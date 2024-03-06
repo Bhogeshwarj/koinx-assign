@@ -2,8 +2,38 @@
   background-color: rgba(40, 107, 234, 1)
 }
 
+.cl{
+  color: rgba(62, 87, 101, 1);
+}
+.chart{
+  height: 711px;
+  width: 881px;
+  border: transparent;
+}
 body{
   background-color: rgba(239, 242, 245, 1);
   /* background-color: red; */
   
+}
+.card1{
+  width: 426px;
+height: 515px;
+border-radius: 16px;
+gap: 30px;
+background-color: rgba(0, 82, 254, 1);
+
+}
+
+.card2{
+  background-color: white;
+  width: 426px;
+  height: 297px;
+  border-radius: 8px;
+}
+.btn1{
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+  width: 250px;
+  height: 48px;
 }
