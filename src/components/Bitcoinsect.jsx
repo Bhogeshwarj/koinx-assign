@@ -25,11 +25,12 @@ const BitcoinPrice = () => {
   }, []);
 
   return (
+    <>
     <div>
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <>
+        <div>
           <div className="coinInfoSection m-6">
             <div className="coinName flex flex-grow items-center">
               <img src={coinimg} alt="" className="w-9 h-9" />
@@ -58,9 +59,10 @@ const BitcoinPrice = () => {
               ₹ {bitcoinData.inr.toLocaleString()}
             </p>
           </div>
-        </>
+        </div>
       )}
     </div>
+    </>
   );
 };
 
