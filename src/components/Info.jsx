@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 const Infolayout = () => {
     const activeStyles = {
@@ -11,6 +12,7 @@ const Infolayout = () => {
 
     return (
         <>
+        <div>
             <nav className='info-nav mt-5 flex gap-8'>
                 <NavLink
                     to="."
@@ -61,6 +63,7 @@ const Infolayout = () => {
                 </nav>
             <hr className='h-1 text-gray-400 mb-5'/>
             <Outlet />
+            </div>
            
         </>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 import adimg from "../assets/image (1).png"
-
+import Trendingcoinsection from './Trendingcoinsection'
 const AdandTrend = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const AdandTrend = () => {
         <button className='btn1  text-black px-4 pb-2 '>Get Started for Free </button>
     </div>
     <div className="mt-4 text-1xl font-semibold card2">
-        Trending Coins (24h)
+        <Trendingcoinsection />
     </div>
 </div>
 
