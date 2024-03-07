@@ -1,8 +1,7 @@
-// TrendingCoins.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const TrendingCoins = () => {
+const Trendingcoinsection = () => {
   const [trendingCoins, setTrendingCoins] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,22 +23,37 @@ const TrendingCoins = () => {
   }, []);
 
   return (
-    <div className='flex flex-col p-6'>
-      <h2 className="text-2xl font-semibold mb-4 ">Trending Coins (24h)</h2>
+    <div className="flex flex-col p-6">
+      <h2 className="text-2xl font-semibold mb-4">Trending Coins (24h)</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div className='flex flex-col'>
-
         <ul>
           {trendingCoins.map((coin) => (
-              <li key={coin.item.id} className='py-4'>{coin.item.name}</li>
-              ))}
-        </ul>
+            <li key={coin.item.id} className="py-4 flex items-center">
+              <div className="flex place-items-center font-medium">
+                <img
+                  src={coin.item.small}
+                  alt={`${coin.item.name} logo`}
+                  className="w-8 h-8 mr-2"
+                />
+                {coin.item.name} ({coin.item.symbol})
               </div>
+              <span
+                className={`flex items-center ml-auto rounded-md px-3 ${
+                  coin.item.data.price_change_percentage_24h.usd < 0
+                    ? 'bg-red-100 text-red-600'
+                    : 'bg-green-100 text-green-600'
+                }`}
+              >
+                {coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%
+              </span>
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
 };
 
-export default TrendingCoins;
+export default Trendingcoinsection;

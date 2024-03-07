@@ -11,7 +11,7 @@ const AdandTrend = () => {
         <img src={adimg} alt="" className="mb-1" />
         <button className='btn1  text-black px-4 pb-2 '>Get Started for Free </button>
     </div>
-    <div className="mt-4 text-1xl font-semibold card2">
+    <div className="mt-4 text-1xl font-semibold bg-white rounded-sm">
         <Trendingcoinsection />
     </div>
 </div>
