@@ -1,4 +1,5 @@
 import React from 'react';
+import Likesection from './Likesection';
 
 import TradingViewWidget from './TradingViewWidget';
 import AdandTrend from './AdandTrend';
@@ -32,8 +33,8 @@ const Currencylayout = () => {
         </div>
       </div>
     </div>
-      <div className="youmayalsolike bg-black text-white">
-        you may also like
+      <div className="youmayalsolike bg-white text-black w-full">
+        <Likesection />
       </div>
       </>
   );
