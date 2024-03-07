@@ -3,7 +3,7 @@ import React from 'react';
 
 const Overview = () => {
   return (
-    <div className="performance flex flex-col justify-between w-881 h-500 bg-white rounded-lg shadow-md p-5">
+    <div className="performance flex flex-col justify-betwee bg-white rounded-lg shadow-md p-5">
       <div className="space-y-2">
         <h1 className="text-2xl font-bold">Performance</h1>
         <div className="flex justify-between">

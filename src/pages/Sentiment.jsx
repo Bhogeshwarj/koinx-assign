@@ -23,7 +23,7 @@ const Sentiment = () => {
   };
 
   return (
-    <div className="senti-container  bg-white p-5 ">
+    <div className="card-likeContainer2  bg-white p-5 ">
       <h2 className="text-2xl  font-bold">Sentiment</h2>
 
       {/* Key Events Carousel */}
