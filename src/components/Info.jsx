@@ -30,35 +30,29 @@ const Infolayout = () => {
                 </NavLink>
 
                 <NavLink
-                    to="news"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    News
-                </NavLink>
-
-                <NavLink
-                    to="sentiments"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    Sentiments
-                </NavLink>
-                <NavLink
                     to="team"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
                     Team
+                </NavLink>
+            
+                <NavLink
+                    to="tokenomics"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    Tokenomics
+                </NavLink>
+                <NavLink
+                    to="news"
+                    style={({ isActive }) => isActive ? activeStyles : null}
+                >
+                    News
                 </NavLink>
                 <NavLink
                     to="technicals"
                     style={({ isActive }) => isActive ? activeStyles : null}
                 >
                     Technical
-                </NavLink>
-                <NavLink
-                    to="tokenomics"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    Tokenomics
                 </NavLink>
                 </nav>
             <hr className='h-1 text-gray-400 mb-5'/>
