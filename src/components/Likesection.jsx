@@ -36,15 +36,15 @@ const Likesection = () => {
   return (
     <div className="allsection mt-5 w-full">
       <div className="youmayalsolikesection py-5">
-        <h3 className="text-2xl font-bold mb-4">You may also Like</h3>
+        <h3 className="text-2xl mx-5 font-bold mb-4">You may also Like</h3>
         <div className="carousel-container ">
           {loading ? (
             <p>Loading...</p>
           ) : (
             <Slider {...sliderSettings}>
               {trendingCoins.map((coin) => (
-                <div key={coin.item.id} className="coin-card border p-4">
-                  <div className="flex items-center  mx-5">
+                <div key={coin.item.id} className="coin-card m-4 p-4">
+                  <div className="flex items-center mx-5">
                     <img
                       src={coin.item.small}
                       alt={`${coin.item.name} logo`}
@@ -69,7 +69,7 @@ const Likesection = () => {
           )}
         </div>
       </div>
-      <div className="trendingCoinsSection">
+      {/* <div className="trendingCoinsSection">
         <h3 className="text-2xl font-bold mb-4">Trending Coins</h3>
         <div className="carousel-container">
           {loading ? (
@@ -102,7 +102,7 @@ const Likesection = () => {
             </Slider>
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
