@@ -1,19 +1,13 @@
 .gradient{
   background-color: rgba(40, 107, 234, 1)
 }
-.layout {
-  display: flex;
-  min-height: 100vh; /* Ensure the container fills the viewport */
-  flex-direction: column; /* Arrange content vertically */
-}
-
 
 .cl{
   color: rgba(62, 87, 101, 1);
 }
 .chart{
-  height: 632px;
-  width: 900px;
+  height: 711px;
+  width: 881px;
   border: transparent;
 }
 body{
@@ -49,14 +43,6 @@ border-radius: 8px;
 gap: 24px;
 margin-bottom: 5px;
 
-}
-.card-likeContainer2{
-  width:  881px;
-  height: 350px;
-  padding: 24px;
-  border-radius: 8px;
-  gap: 24px;
-  margin-bottom: 5px;
 }
 .card2{
   background-color: white;

@@ -36,7 +36,7 @@ const Likesection = () => {
   return (
     <div className="allsection mt-5 w-full">
       <div className="youmayalsolikesection py-5">
-        <h3 className="text-2xl mx-5 font-bold mb-4">You may also Like</h3>
+        <h3 className="text-2xl mx-5 font-bold mb-4">Trending Coins</h3>
         <div className="carousel-container ">
           {loading ? (
             <p>Loading...</p>

@@ -7,8 +7,13 @@ const Header = () => {
 
     return (
       <nav className="flex items-center justify-between bg-white flex-wrap p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+        {/* <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <Link to="/">  <img src={logo} className=" logo mr-2" alt="Logo" /> </Link>
+        </div> */}
+
+        <div className=' text-2xl font-semibold' style={{color: "rgba(40, 107, 234, 1)"}}>
+       <Link to="/">  CryptoCrest</Link>
+
         </div>
         <div className="block lg:hidden">
           <button
